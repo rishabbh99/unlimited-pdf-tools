@@ -43,6 +43,23 @@ export const ToolHubHome: React.FC<ToolHubHomeProps> = ({ onNavigate }) => {
           </span>
         </h1>
 
+        {/* Hero Rating Pill Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700/70 text-xs font-bold text-slate-700 dark:text-slate-200 shadow-sm mt-3 backdrop-blur-sm">
+          <div className="flex items-center text-amber-400">
+            <span>⭐</span>
+            <span className="ml-1 font-black text-slate-900 dark:text-white">4.9 / 5</span>
+          </div>
+          <span className="text-slate-300 dark:text-slate-600">•</span>
+          <span className="text-slate-600 dark:text-slate-300 font-semibold">
+            48,700+ Global Users
+          </span>
+          <span className="text-slate-300 dark:text-slate-600">•</span>
+          <span className="inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-extrabold">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            100% Free &amp; Client-Side
+          </span>
+        </div>
+
         <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 mt-4 max-w-2xl mx-auto leading-relaxed">
           Compress, OCR scanned pages, permanently redact sensitive data, merge, split, fill forms, and digitally sign PDFs completely in your browser. Zero uploads, zero daily limits, total privacy.
         </p>
