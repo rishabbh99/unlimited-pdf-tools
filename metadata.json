@@ -1,0 +1,6 @@
+{
+  "name": "PDF UltraHub - 100% Free Unlimited Client-Side PDF Tools",
+  "description": "100% Free, Unlimited & Private Client-Side PDF Utility Tool Hub. Compress, OCR scanned PDF to text, redact sensitive data, merge, split, fill forms, and digitally sign PDFs completely in your browser with zero server uploads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
