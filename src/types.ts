@@ -9,7 +9,48 @@ export type ToolId =
   | 'images-to-pdf'
   | 'pdf-to-images'
   | 'rotate'
-  | 'protect';
+  | 'protect'
+  | 'packager';
+
+export type ExamPresetId = 'upsc-ssc' | 'nta-jee-neet' | 'college-admission' | 'ibps-bank' | 'custom';
+export type FormSlotType = 'photo' | 'signature' | 'id-card' | 'marksheet' | 'extra-doc';
+
+export interface FormSlotConfig {
+  id: string;
+  type: FormSlotType;
+  label: string;
+  sublabel: string;
+  aspectRatio?: number; // width / height, e.g. 3.5/4.5
+  aspectLabel?: string;
+  maxKb: number;
+  minKb?: number;
+  targetFormat?: 'image/jpeg' | 'application/pdf';
+  required?: boolean;
+}
+
+export interface FormPackagerPreset {
+  id: ExamPresetId;
+  name: string;
+  badge: string;
+  description: string;
+  maxCombinedPdfKb: number;
+  slots: FormSlotConfig[];
+}
+
+export interface SlotFileState {
+  file: File | null;
+  previewUrl: string | null;
+  originalSize: number;
+  processedBlob: Blob | null;
+  processedSize: number;
+  status: 'idle' | 'processing' | 'ready' | 'error';
+  errorMessage?: string;
+  cropPreset?: string;
+  brightness: number; // -50 to 50
+  contrast: number; // -50 to 50
+  enhanceClarity: boolean;
+}
+
 
 export interface ToolConfig {
   id: ToolId;

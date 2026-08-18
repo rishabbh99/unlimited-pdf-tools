@@ -1315,8 +1315,79 @@ export const SEO_PAGES: SeoPageData[] = [
       }
     ],
     relatedSlugs: ['sign-pdf', 'fill-pdf', 'signature-to-pdf', 'protect-pdf']
+  },
+  {
+    slug: 'govt-exam-form-packager',
+    toolId: 'packager',
+    category: 'size-target',
+    title: '1-Click Govt Exam Form Packager (< 200KB)',
+    shortName: 'Govt Form Packager',
+    h1: '1-Click Govt Exam Form Packager (Photo, Signature & PDF < 200KB)',
+    subTitle: 'Auto-crop photo to 3.5x4.5cm (<50KB), whiten signature (<20KB), and merge documents into 1 PDF under 200KB.',
+    metaTitle: '1-Click Govt Exam Form Packager - Photo, Signature & PDF Resizer (< 200KB)',
+    metaDescription: '100% free tool for UPSC, SSC, NTA, JEE, NEET, IBPS aspirants. Auto-crop passport photo, enhance signature, and combine all documents into 1 PDF under 200KB.',
+    intro: 'Applying for government exams and job portals requires strict adherence to image dimensions and file size caps. This 1-Click Form Packager automatically sizes your photo (3.5x4.5cm < 50KB), signature (< 20KB), and compiles your identity cards into a single verified PDF dossier under 200 KB.',
+    badge: 'UPSC / SSC / NTA',
+    targetKeywords: ['govt exam form packager', 'upsc photo signature resize', 'ssc form photo 50kb', 'combine documents for exam form 200kb', 'nta exam photo compressor'],
+    features: [
+      'Pre-configured presets for UPSC, SSC, IBPS, and State PSC portals',
+      'Auto-crops photo to 3.5cm x 4.5cm and signature to 3.5cm x 1.5cm',
+      'Built-in paper whitening filter to clean scanned signatures',
+      'Guaranteed combined PDF strictly under 200 KB or 100 KB limits',
+      '1-Click ZIP export containing individual resized images + combined PDF'
+    ],
+    howToSteps: [
+      { name: 'Select Exam Preset', text: 'Choose UPSC / SSC or custom target size limit.' },
+      { name: 'Upload Photo & Signature', text: 'Drop your passport photo, signature, and ID cards into the designated slots.' },
+      { name: 'Enhance & Adjust', text: 'Use brightness/contrast sliders or auto paper whitener if needed.' },
+      { name: 'Download PDF or ZIP', text: 'Click "Generate Combined PDF" or download individual verified images.' }
+    ],
+    faqs: [
+      {
+        question: 'Will this satisfy UPSC and SSC photo & signature requirements?',
+        answer: 'Yes! It formats the photo to 3.5x4.5cm under 50KB and signature to 3.5x1.5cm under 20KB, matching standard SSC/UPSC requirements.'
+      },
+      {
+        question: 'Can I download the photo and signature separately?',
+        answer: 'Yes! Each slot has an instant download button, plus a "Download ZIP Package" button for all assets.'
+      }
+    ],
+    relatedSlugs: ['college-admission-form-packager', 'compress-pdf-to-200kb', 'compress-pdf-for-government-jobs', 'convert-aadhaar-to-pdf']
+  },
+  {
+    slug: 'college-admission-form-packager',
+    toolId: 'packager',
+    category: 'size-target',
+    title: 'College Admission Document Packager (< 200KB)',
+    shortName: 'College Admission Packager',
+    h1: 'College & University Admission Document Packager (< 200KB)',
+    subTitle: 'Merge passport photo, signature, ID proof, and marksheets into a single clean PDF under 200 KB.',
+    metaTitle: 'College Admission Document Packager - Merge All Docs into 1 PDF < 200KB',
+    metaDescription: '100% free tool to combine student passport photo, signature, Aadhaar card, and marksheets into a single application PDF under 200KB with 100% client privacy.',
+    intro: 'Universities and college admission portals frequently require applicants to upload all documents (photo, signature, identity proof, and 10th/12th marksheets) merged into a single PDF under 200 KB. This tool combines and compresses everything locally in your browser memory in one click.',
+    badge: 'Admissions 2026',
+    targetKeywords: ['college admission pdf packager', 'combine all documents in 1 pdf under 200kb', 'university form doc merger 200kb', 'student admission form compressor'],
+    features: [
+      'Combines photo, signature, ID proof, and marksheets into 1 PDF',
+      'Includes applicant profile overview card with verification checklist',
+      'Iterative compression guarantees final file stays strictly under 200 KB',
+      '100% private in-browser RAM processing'
+    ],
+    howToSteps: [
+      { name: 'Select College Admission Preset', text: 'Select "College & University Admission (< 200KB)".' },
+      { name: 'Upload Student Documents', text: 'Add passport photo, signature, ID proof, and academic marksheets.' },
+      { name: 'Package & Download PDF', text: 'Click "Generate Combined PDF" to save your admission dossier.' }
+    ],
+    faqs: [
+      {
+        question: 'What if my marksheets are blurry after compression?',
+        answer: 'Our adaptive compression algorithm preserves high contrast on text areas while scaling background image compression, keeping roll numbers and marks readable.'
+      }
+    ],
+    relatedSlugs: ['govt-exam-form-packager', 'compress-pdf-to-200kb', 'marksheet-to-pdf', 'convert-id-card-to-pdf']
   }
 ];
+
 
 /**
  * Fast lookup helper by slug

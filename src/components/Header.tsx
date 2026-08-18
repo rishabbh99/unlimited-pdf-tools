@@ -19,8 +19,10 @@ import {
   FileSearch,
   Image,
   RotateCw,
+  FileCheck2,
   ShieldCheck as ShieldIcon
 } from 'lucide-react';
+
 
 interface HeaderProps {
   currentToolId?: ToolId;
@@ -66,7 +68,9 @@ export const Header: React.FC<HeaderProps> = ({ currentToolId, onNavigate }) => 
       case 'Image': return <Image className="w-4 h-4" />;
       case 'RotateCw': return <RotateCw className="w-4 h-4" />;
       case 'ShieldCheck': return <ShieldIcon className="w-4 h-4" />;
+      case 'FileCheck2': return <FileCheck2 className="w-4 h-4" />;
       default: return <FileText className="w-4 h-4" />;
+
     }
   };
 

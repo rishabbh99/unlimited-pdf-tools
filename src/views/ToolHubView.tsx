@@ -11,7 +11,9 @@ import { ImagesToPdfTool } from '../components/tools/ImagesToPdfTool';
 import { PdfToImagesTool } from '../components/tools/PdfToImagesTool';
 import { RotateOrganizeTool } from '../components/tools/RotateOrganizeTool';
 import { ProtectTool } from '../components/tools/ProtectTool';
+import { GovtFormPackagerTool } from '../components/tools/GovtFormPackagerTool';
 import { SeoContentSection } from '../components/SeoContentSection';
+
 import { AdBanner } from '../components/AdBanner';
 import { ArrowLeft, Sparkles, ShieldCheck, Zap, Award } from 'lucide-react';
 
@@ -71,8 +73,11 @@ export const ToolHubView: React.FC<ToolHubViewProps> = ({ toolId, currentPath, o
         return <RotateOrganizeTool />;
       case 'protect':
         return <ProtectTool />;
+      case 'packager':
+        return <GovtFormPackagerTool />;
       default:
         return <CompressTool />;
+
     }
   };
 

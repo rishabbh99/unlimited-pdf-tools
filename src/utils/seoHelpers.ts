@@ -139,7 +139,22 @@ export const ALL_TOOLS: ToolConfig[] = [
     badge: '256-Bit',
     category: 'security',
   },
+  {
+    id: 'packager',
+    path: '/govt-exam-form-packager',
+    name: '1-Click Govt Exam & College Form Packager',
+    shortName: 'Form Packager',
+    tagline: 'Resize photo < 50KB, signature < 20KB, and merge all documents into 1 PDF under strict portal limits (200KB).',
+    metaTitle: '1-Click Govt Exam & College Form Packager - Photo, Signature & PDF Resizer (< 200KB)',
+    metaDescription: '100% free, private form packager for UPSC, SSC, NTA, JEE, NEET, and College Admission portals. Auto-crop photo 3.5x4.5cm, whiten signature, and combine all documents into 1 PDF under 200KB.',
+    keywords: ['govt exam form packager', 'upsc photo resizer', 'ssc signature 20kb', 'combine documents for college admission 200kb', 'nta neet photo compressor', 'compress pdf to 200kb for govt form'],
+    iconName: 'FileCheck2',
+    badge: '1-Click Package',
+    category: 'edit',
+    popular: true,
+  },
 ];
+
 
 export interface PathMappingInfo {
   toolId: ToolId;
@@ -296,8 +311,30 @@ export const PATH_TO_TOOL_MAP: Record<string, PathMappingInfo> = {
     overrideMetaTitle: 'Free Organize PDF Tool - Reorder, Rotate & Delete Pages',
     overrideDesc: 'Organize PDF pages online for free. Reorder page sequences, rotate sideways pages, and delete unwanted pages with 100% browser privacy.',
     h1: 'Free Organize PDF Tool'
+  },
+  '/govt-exam-form-packager': {
+    toolId: 'packager',
+    overrideTitle: '1-Click Govt Exam & College Form Packager',
+    overrideMetaTitle: '1-Click Govt Exam Form Packager - Photo < 50KB, Signature < 20KB, PDF < 200KB',
+    overrideDesc: 'Resize photo to 3.5x4.5cm < 50KB, signature to < 20KB, and merge all documents into 1 PDF under 200KB for UPSC, SSC, and College Admissions.',
+    h1: '1-Click Govt Exam & College Form Packager'
+  },
+  '/college-admission-form-packager': {
+    toolId: 'packager',
+    overrideTitle: 'College Admission Form Packager',
+    overrideMetaTitle: 'College Admission Document Packager - Merge All Docs into 1 PDF < 200KB',
+    overrideDesc: 'Combine passport photo, signature, ID proof, and marksheets into a single PDF under 200KB for college and university admission forms.',
+    h1: 'College & University Admission Document Packager'
+  },
+  '/form-packager': {
+    toolId: 'packager',
+    overrideTitle: 'Online Form Packager',
+    overrideMetaTitle: 'Online Exam Form Packager & Resizer - 100% Client-Side Privacy',
+    overrideDesc: '1-Click packaging tool for online application forms. Resize images to standard dimensions and compress combined PDF below portal limits.',
+    h1: 'Online Exam & Admission Form Packager'
   }
 };
+
 
 export function getToolByPath(path: string): ToolConfig | undefined {
   const cleanPath = path.startsWith('/') ? path : `/${path}`;
@@ -595,8 +632,41 @@ export const TOOL_SEO_DETAILS: Record<ToolId, ToolSeoConfig> = {
         answer: 'Never! Encryption happens locally inside your browser memory.'
       }
     ]
+  },
+  packager: {
+    h1Title: '1-Click Govt Exam & College Form Packager (< 200KB)',
+    subTitle: 'Auto-resize passport photo < 50KB, whiten signature < 20KB, and merge all documents into 1 PDF under 200KB.',
+    descriptionText: 'Designed specifically for students and job aspirants applying to UPSC, SSC, IBPS, NTA (JEE/NEET), State PSC, and College Admissions. Automatically resizes images to official centimeter/pixel dimensions, enhances dark signatures on white paper, and generates clean combined PDF dossiers strictly under portal file size limits.',
+    features: [
+      'Pre-configured presets for UPSC, SSC, NTA (JEE/NEET), IBPS, and University Admissions',
+      'Auto-crop to standard 3.5cm x 4.5cm photo and 3.5cm x 1.5cm signature aspect ratios',
+      'Instant signature clarity enhancer & paper whitening engine',
+      'Guaranteed file compression strictly under 200 KB or 100 KB limits',
+      '100% private in-browser client-side execution with zero cloud storage'
+    ],
+    howToSteps: [
+      { name: 'Select Exam / College Preset', text: 'Choose UPSC/SSC, NTA Exam, College Admission, or custom target size.' },
+      { name: 'Upload Photo, Signature & Docs', text: 'Drop your files into the designated dropzones with live size indicators.' },
+      { name: 'Adjust or Enhance', text: 'Use brightness/contrast and auto paper whitening to clean up signatures.' },
+      { name: 'Download PDF or ZIP Package', text: 'Click "Generate Combined PDF" or download individual verified assets.' }
+    ],
+    faqs: [
+      {
+        question: 'Will this form packager ensure my PDF is strictly under 200 KB?',
+        answer: 'Yes! The engine uses an iterative binary search compression algorithm to guarantee the final combined PDF is strictly below the selected limit (e.g. < 200 KB or < 100 KB).'
+      },
+      {
+        question: 'Can I download the resized photo and signature separately?',
+        answer: 'Yes! You can download the resized 3.5x4.5cm photo (under 50KB) and signature (under 20KB) as individual files or batch download everything in a single ZIP file.'
+      },
+      {
+        question: 'Are my confidential documents and ID cards safe?',
+        answer: '100% safe. All image cropping, whitening, and PDF compilation occurs locally in your device RAM. Zero files are uploaded to any server.'
+      }
+    ]
   }
 };
+
 
 /**
  * Returns dynamic SEO configuration tailored to specific programmatic landing pages

@@ -65,7 +65,47 @@ export const ToolHubHome: React.FC<ToolHubHomeProps> = ({ onNavigate }) => {
         <PrivacyBadge />
       </div>
 
+      {/* Featured Tool Hero Card: 1-Click Govt Exam & College Form Packager */}
+      <div className="max-w-5xl mx-auto px-4">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white p-6 sm:p-8 shadow-xl border border-blue-700/40 group">
+          <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div className="space-y-2 max-w-xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/30 text-xs font-black uppercase tracking-wider">
+                <Sparkles className="w-3.5 h-3.5 text-blue-400" />
+                <span>New Student & Aspirant Tool</span>
+              </div>
+              <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+                1-Click Govt Exam & College Form Packager
+              </h2>
+              <p className="text-xs sm:text-sm text-blue-200/80 leading-relaxed">
+                Auto-crop passport photo (3.5x4.5cm under 50KB), whiten &amp; enhance signature (under 20KB), and merge all ID proofs &amp; marksheets into 1 clean PDF strictly under 200 KB.
+              </p>
+
+              <div className="flex flex-wrap items-center gap-2 pt-1">
+                <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-white/10 text-white font-semibold">
+                  ✓ UPSC / SSC
+                </span>
+                <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-white/10 text-white font-semibold">
+                  ✓ NTA / JEE / NEET
+                </span>
+                <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-white/10 text-white font-semibold">
+                  ✓ College Admissions (&lt; 200KB)
+                </span>
+              </div>
+            </div>
+
+            <button
+              onClick={() => onNavigate('/govt-exam-form-packager')}
+              className="px-6 py-3.5 rounded-2xl bg-blue-500 hover:bg-blue-400 text-slate-950 font-black text-sm shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transition-all shrink-0 cursor-pointer self-start md:self-center"
+            >
+              Open Form Packager →
+            </button>
+          </div>
+        </div>
+      </div>
+
       {/* Main Grid & Sidebar Layout */}
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-4 gap-8">
         
         {/* Left Core Tools Column */}

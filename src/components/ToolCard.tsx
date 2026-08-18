@@ -11,9 +11,11 @@ import {
   RotateCw, 
   ShieldCheck, 
   FileText,
+  FileCheck2,
   ArrowRight,
   Sparkles
 } from 'lucide-react';
+
 
 interface ToolCardProps {
   tool: ToolConfig;
@@ -32,7 +34,9 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool, onClick }) => {
       case 'Image': return <Image className="w-6 h-6" />;
       case 'RotateCw': return <RotateCw className="w-6 h-6" />;
       case 'ShieldCheck': return <ShieldCheck className="w-6 h-6" />;
+      case 'FileCheck2': return <FileCheck2 className="w-6 h-6" />;
       default: return <FileText className="w-6 h-6" />;
+
     }
   };
 
